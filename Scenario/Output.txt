@@ -1,0 +1,52 @@
+
+
+MARINE SCENARIO:
+
+
+./clingo  ./ASP/hopa_main.lp  ./ASP/presumed.lp  ./ASP/infer.lp  ./ASP/tangent.lp  ./ASP/sqrt50.lp  ./Scenario/marine.lp
+
+clingo version 5.4.0
+Reading from ./ASP/hopa_main.lp ...
+
+Solving...
+Answer: 1
+xloc(1,33) xloc(2,32) xloc(8,33) xloc(5,18) yloc(1,16) yloc(2,6) yloc(8,24) yloc(5,11) chosen(10,1) chosen(9,3) violated(14) yloc(3,17) yloc(4,6) yloc(6,30) yloc(7,27) xloc(3,9) xloc(4,24) xloc(6,15) xloc(7,19) orient(5,48) orient(7,53) orient(3,245) orient(4,147) inferred_diff_opra(3,4,15,4) inferred_orient(3,245)
+Optimization: 1
+Answer: 2
+xloc(1,33) xloc(2,32) xloc(8,33) xloc(5,18) yloc(1,16) yloc(2,6) yloc(8,24) yloc(5,11) chosen(10,1) chosen(9,3) yloc(3,17) yloc(4,6) yloc(6,30) yloc(7,27) xloc(3,9) xloc(4,24) xloc(6,15) xloc(7,19) orient(5,24) orient(6,342) orient(7,53) orient(3,245) orient(4,147) inferred_diff_opra(3,4,15,4) inferred_orient(3,245)
+Optimization: 0
+OPTIMUM FOUND
+
+Models       : 2
+  Optimum    : yes
+Optimization : 0
+Calls        : 1
+Time         : 3.937s (Solving: 0.56s 1st Model: 0.54s Unsat: 0.00s)
+CPU Time     : 3.921s
+
+
+
+
+ROBOT SCENARIO:
+
+
+./clingo  ./ASP/hopa_main.lp  ./ASP/inconsist.lp  ./ASP/tangent.lp  ./ASP/sqrt50.lp  ./Scenario/robot.lp
+
+clingo version 5.4.0
+Reading from ./ASP/hopa_main.lp ...
+
+
+Solving...
+Answer: 1
+orient(1,0) drop(19) chosen(18,1) yloc(2,9) yloc(1,9) yloc(3,10) yloc(5,10) yloc(4,3) xloc(2,6) xloc(1,4) xloc(3,8) xloc(5,6) xloc(4,11) orient(2,14) orient(3,319) orient(4,27) orient(5,0) orient(6,27) orient(7,310) orient(8,90) orient(11,207)
+Optimization: 1
+OPTIMUM FOUND
+
+Models       : 1
+  Optimum    : yes
+Optimization : 1
+Calls        : 1
+Time         : 3.706s (Solving: 1.76s 1st Model: 0.05s Unsat: 1.71s)
+CPU Time     : 3.706s
+
+
