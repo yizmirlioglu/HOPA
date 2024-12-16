@@ -1,2 +1,2 @@
 
-This folder includes problem instances for experiments with HOPA calculus
+This folder includes problem instances for experiments with HOPA calculus. You should unzip the file to run the computational experiments
