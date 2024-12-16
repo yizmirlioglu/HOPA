@@ -1,0 +1,14 @@
+
+This folder includes Python scripts to make automated test of benchmark problem instances (in HOPA and OPRA) and write the results into Excel files. 
+
+To make a test, copy the file into the main folder (where clingo files are located), create a new folder named "Results" and run the respective script with Python 3. The names of the files are self-explanatory.
+
+
+For example, to make an experiment with basic consistent HOPA instances, run the command below at the main folder:
+
+python3  test_hopa_consist_basic.py
+
+
+To make an experiment with disjunctive consistent HOPA instances, run the command below at the main folder:
+
+python3  test_hopa_consist_disjunc.py
