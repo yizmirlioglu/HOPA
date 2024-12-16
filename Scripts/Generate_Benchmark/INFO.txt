@@ -1,0 +1,7 @@
+
+This folder includes Matlab/Octave scripts to generate consistent and inconsistent random benchmark problem instances for HOPA and OPRA used in the experiments. The names of the files are self-explanatory.
+
+To create instances, specify parameters in the scripts (or use existing parameters) and run the respective script in Matlab or Octave. 
+
+
+For example to create consistent benchmark instances for HOPA, run generate_hopa_consist.m 
