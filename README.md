@@ -1,7 +1,7 @@
 # HOPA
 # Hybrid Oriented Point Algebra
 
-This repository includes the following items:
+This repository includes the supplementary material for HOPA (Hybrid Oriented Point Algebra) calculus, introduced in AAAI 2025 conference paper. The contents of the folders are as follows:
 
 ASP folder:  ASP programs for HOPA
 
@@ -46,6 +46,8 @@ gridS.lp :  specifies a grid of size SxS,  and corresponding distance intervals 
 
 degZ.lp :  specifies angle resolution as Z degrees  and corresponding angle values (for choosing orientation of objects)
 
+
+Note that in the input format, the D parameter in distance(N,K,L,D), lower bound (U,D), upper bound (U,D) atoms and D1, D2 parameters in distance range(N,K,L,D1,D2) atom hold the square of the respective distance value. The reason is that the distance (which is equal to square root of D) may not be an integer value.
 
 
 SCENARIOS:
